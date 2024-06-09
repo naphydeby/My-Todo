@@ -14,7 +14,7 @@ function Todo(){
     const deleteTask=(index)=>{
         const updateList =[...tasks];
         console.log("Automatic")
-//    delete updateList[index];
+
 updateList.splice(index, 1)
    setTasks(updateList)
     }
