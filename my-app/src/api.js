@@ -15,7 +15,6 @@ export const fetchTasks = async () => {
 };
 
 
-
 export const addTasks = async (task) => {
   try {
     const response = await axios.post(URL, task);

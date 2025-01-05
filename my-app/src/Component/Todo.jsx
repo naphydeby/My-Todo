@@ -11,7 +11,7 @@ function Todo() {
     const getTasks = async () => {
       try {
         const data = await fetchTasks();
-        console.log('Fetched tasks:', data); 
+        // console.log('Fetched tasks:', data); 
         setTasks(data);
       } catch (error) {
         console.error('Error fetching tasks:', error);
@@ -38,7 +38,7 @@ function Todo() {
   const handleUpdateTasks = async (id, updatedTask) => {
     try {
       const response = await updateTasks(id, updatedTask);
-      console.log('Updated task:', response); // Log the updated task
+      console.log('Updated task:', response); 
       setTasks(tasks.map((task) => (task.id === id ? response : task)));
     } catch (error) {
       console.error('Error updating task:', error);
